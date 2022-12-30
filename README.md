@@ -27,3 +27,25 @@ Options:
 	-h, --help
 		Show this help message and exit
 ```
+
+A test file has been given for this script:
+
+```
+Rscript --vanilla CCDI_to_dbGaP.R -f test_files/a_all_pass_CCDI_Submission_Template_v1.0.2.xlsx
+```
+
+If you would like to use the concatenation portion of the script, supply the new manifest with the previous dbGaP directory for the same study.
+
+```
+Rscript --vanilla CCDI_to_dbGaP.R -f test_files/a_all_pass_CCDI_Submission_Template_v1.0.2.xlsx -s test_files/phs987654_dbGaP_submission_test_a/
+The dbGaP submission files are being made at this time.
+
+
+ THIS SCRIPT IS ONLY MEANT FOR CCDI AND ALL CONSENT IS ASSUMED TO BE GRU, CONSENT GROUP 1.
+
+
+
+Process Complete.
+
+The output files can be found here: ChildhoodCancerDataInitiative-CCDI_to_dbGaP/test_files/phs987654_dbGaP_submission_20221230/
+```
