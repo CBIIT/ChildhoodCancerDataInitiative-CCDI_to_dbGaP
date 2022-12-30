@@ -1,0 +1,7 @@
+SUBJECT_ID	CONSENT	SEX
+par_1	1	2
+par_2	1	1
+par_3	1	UNK
+par_4	1	1
+par_5	1	2
+par_6	1	1

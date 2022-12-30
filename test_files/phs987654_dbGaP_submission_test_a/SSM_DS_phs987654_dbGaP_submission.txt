@@ -1,0 +1,6 @@
+SUBJECT_ID	SAMPLE_ID
+par_2	sample_4
+par_3	sample_5
+par_4	sample_6
+par_5	sample_7
+par_6	sample_8

@@ -210,7 +210,7 @@ if (!is.null(opt$previous_submission)){
 ################
 
 #Create an output directory for all the files
-phs_id=unique(df$phs_accession)[1]
+phs_id=unique(df_subject$study.phs_accession)[1]
 
 output_file=paste(phs_id,"_dbGaP_submission",sep="")
 
@@ -232,11 +232,11 @@ dir.create(path = paste(path,new_dir,sep = ""), showWarnings = FALSE)
 path=paste(path,new_dir,sep = "")
 
 #Write out the three DD and three DS data frames
-write.xlsx(x = as.data.frame(df_sc_dd),file = paste(path,"SC_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
+xlsx::write.xlsx(x = as.data.frame(df_sc_dd),file = paste(path,"SC_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
 
-write.xlsx(x = as.data.frame(df_ssm_dd),file = paste(path,"SSM_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
+xlsx::write.xlsx(x = as.data.frame(df_ssm_dd),file = paste(path,"SSM_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
 
-write.xlsx(x = as.data.frame(df_sa_dd),file = paste(path,"SA_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
+xlsx::write.xlsx(x = as.data.frame(df_sa_dd),file = paste(path,"SA_DD.xlsx",sep=""),col.names = FALSE, showNA = FALSE, row.names = FALSE)
 
 write_tsv(x = SC,file = paste(path,"SC_DS_",output_file,".txt",sep = ""),na="")
 

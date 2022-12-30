@@ -1,0 +1,6 @@
+SAMPLE_ID	SAMPLE_TYPE
+sample_4	Saliva
+sample_5	Normal
+sample_6	Bone marrow
+sample_7	Blood
+sample_8	Blood
