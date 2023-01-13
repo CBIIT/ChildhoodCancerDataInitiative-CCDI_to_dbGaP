@@ -1,4 +1,4 @@
-# ChildrensCancerDataInitiative-CCDI_to_dbGaP
+# ChildhoodCancerDataInitiative-CCDI_to_dbGaP
 This script will take data from a CCDI submission manifest, and create the Subject Consent, Subject Sample Mapping and Sample Attribute files specifically for a CCDI project.
 
 To run the script on a complete [CCDI validated submission template](https://github.com/CBIIT/ccdi-model/tree/main/metadata-manifest), run the following command in a terminal where R is installed for help.
@@ -47,5 +47,5 @@ The dbGaP submission files are being made at this time.
 
 Process Complete.
 
-The output files can be found here: ChildrensCancerDataInitiative-CCDI_to_dbGaP/test_files/phs987654_dbGaP_submission_20221230/
+The output files can be found here: ChildhoodCancerDataInitiative-CCDI_to_dbGaP/test_files/phs987654_dbGaP_submission_20221230/
 ```
