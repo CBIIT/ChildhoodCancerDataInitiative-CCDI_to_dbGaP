@@ -145,7 +145,7 @@ SC$SEX[grep(pattern = "Male",x = SC$SEX)]<-"1"
 SSM = mutate(df_sample, SUBJECT_ID=participant.participant_id, SAMPLE_ID=sample_id)%>%
   select(SUBJECT_ID, SAMPLE_ID)
 
-SA = mutate(df_sample, SAMPLE_ID=sample_id, SAMPLE_TYPE=sample_type)%>%select(SAMPLE_ID,SAMPLE_TYPE)
+SA = mutate(df_sample, SAMPLE_ID=sample_id, SAMPLE_TUMOR_STATUS=sample_tumor_status)%>%select(SAMPLE_ID,SAMPLE_TUMOR_STATUS)
 
 #Ensure the rows are unique
 SC=unique(SC)
@@ -163,7 +163,7 @@ df_sc_dd=data.frame(X1=c("VARNAME","SUBJECT_ID","CONSENT","SEX"),X2=c("VARDESC",
 
 df_ssm_dd=data.frame(X1=c("VARNAME","SUBJECT_ID","SAMPLE_ID"),X2=c("VARDESC","Subject ID","Sample ID"),X3=c("TYPE","string","string"),X4=c("VALUES",NA,NA))
 
-df_sa_dd=data.frame(X1=c("VARNAME","SAMPLE_ID","SAMPLE_TYPE"),X2=c("VARDESC","Sample ID","Sample Type"),X3=c("TYPE","string","string"),X4=c("VALUES",NA,NA))
+df_sa_dd=data.frame(X1=c("VARNAME","SAMPLE_ID","SAMPLE_TUMOR_STATUS"),X2=c("VARDESC","Sample ID","Sample Tumor Status"),X3=c("TYPE","string","string"),X4=c("VALUES",NA,NA))
 
 
 ################
