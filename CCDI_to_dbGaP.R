@@ -133,7 +133,7 @@ df_sample=workbook_list["sample"][[1]]
 
 
 #Mutate the CCDI template data frame into the two required dbGaP data frames
-SC=mutate(df_subject,SUBJECT_ID=participant_id,SEX=gender,CONSENT="1")%>%
+SC=mutate(df_subject,SUBJECT_ID=participant_id,SEX=sex_at_birth,CONSENT="1")%>%
   select(SUBJECT_ID,CONSENT,SEX)
 
 #Convert sex from a string to a value
